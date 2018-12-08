@@ -12,7 +12,7 @@ public class FacebookArtist {
 	public void loadGraph(Graph<Integer> g) {
 		g.clear();
 		
-		try (BufferedReader br = new BufferedReader(new FileReader("/Users/thomas/eclipse-workspace/Iteration/src/nl/frii/iteration/graph/examplegraphs/artist_edges.csv"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("./iteration/graph/examplegraphs/artist_edges.csv"))) {
 		    String line;
 		    while ((line = br.readLine()) != null) {		    		
 		    		g.addEdge(Integer.parseInt(line.split(",")[0]), 
